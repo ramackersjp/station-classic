@@ -23,7 +23,7 @@ services:
       - default
 
   assets:
-    image: ghcr.io/terra-money/station-assets:1.0.1
+    image: ghcr.io/terra-money/station-assets:1.0.2
     hostname: assets
     networks:
       - default
