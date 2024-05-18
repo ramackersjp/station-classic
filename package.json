@@ -67,7 +67,7 @@
     "sass": "^1.52.1",
     "secp256k1": "^4.0.3",
     "semver": "^7.5.2",
-    "sentence-case": "^3.0.4",
+    "sentence-case": "^4.0.0",
     "xss": "1.0.15"
   },
   "devDependencies": {
