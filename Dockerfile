@@ -1,4 +1,4 @@
-FROM node:16 as builder
+FROM node:22 as builder
 
 WORKDIR /app
 
@@ -28,7 +28,7 @@ RUN set -eux && \
 
 ###############################################################################
 
-FROM node:16 as reloader
+FROM node:22 as reloader
 
 ARG REACT_APP_ASSETS="https://assets.terra.dev" \
     REACT_APP_STATION_ASSETS="https://station-assets.terra.dev"
@@ -48,7 +48,7 @@ CMD ["npm", "run", "start"]
 
 ###############################################################################
 
-FROM node:16-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 COPY --from=builder /app/build .
